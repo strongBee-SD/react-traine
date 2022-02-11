@@ -1,0 +1,139 @@
+#burger {
+  position: relative;
+  display: block;
+  height: 20px;
+  width: 24px;
+  cursor: pointer;
+
+  div {
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    content: "";
+    background-color: $topListColor;
+  }
+
+  div:nth-child(1) {
+    top: 0px;
+    left: 0px;
+  }
+
+  div:nth-child(2) {
+    top: 6px;
+    left: 0px;
+  }
+
+  div:nth-child(3) {
+    top: 12px;
+    left: 0px;
+  }
+}
+
+// MENU
+
+.offcanvas {
+  background-color: $menuBkgColor;
+  color: #fff;
+
+  svg {
+    width: 45px;
+    height: 45px;
+  }
+
+  .offcanvas-header {
+    a {
+      color: #fff;
+    }
+    .btn-close:focus {
+      box-shadow: none;
+    }
+  }
+
+  .offcanvas-body {
+    padding: 0;
+  }
+
+  .burger-menu {
+    position: relative;
+    min-height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0%;
+    box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 0 5px 5px 0;
+    z-index: 3;
+
+    .burger-menu-features {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+
+      div {
+        display: grid;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        border: 0.2px solid rgba(255, 255, 255, 0.1);
+
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+
+      div:nth-child(1) {
+        padding: 0;
+        grid-template-columns: 2fr 10fr;
+        span {
+          padding-left: 10px;
+        }
+        select {
+          background-color: inherit;
+          color: #fff;
+          border: none;
+          box-shadow: none;
+          option {
+            background-color: $menuBkgColor;
+          }
+        }
+      }
+    }
+
+    .nav {
+      flex-direction: column;
+      padding: 0 1rem;
+
+      .nav-item {
+        text-align: left;
+        border-bottom: 1px solid #3587e6;
+
+        a {
+          display: inline-block;
+          padding: 7px 5px;
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+    .top-list-phone {
+      display: inline-block;
+      position: absolute;
+      padding: 0 5px 0;
+      text-align: left;
+      bottom: 5px;
+      left: 0;
+      width: 100%;
+      background-color: #124a7c;
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+
+    // .top-list:hover {
+    //   background-color: $topListHoverBkg;
+    // }
+  }
+}

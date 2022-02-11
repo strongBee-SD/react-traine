@@ -1,0 +1,147 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(101, 190, 206);
+
+  .moveToTop {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    padding: 10px;
+    margin: 0;
+    border-radius: 50%;
+    background-color: rgba(169, 169, 169, 0.239);
+    cursor: pointer;
+    z-index: 3;
+
+    svg {
+      color: rgb(7, 68, 7);
+    }
+  }
+
+  hr {
+    margin: 5px 0;
+    border: 0;
+    border-top: 1px solid #000;
+    opacity: 1;
+  }
+
+  .subscribe-cont {
+    width: 99%;
+    position: relative;
+    padding: 20px;
+    margin: 50px auto 20px;
+    background-color: #1e88e5;
+    border-radius: 5px;
+
+    .subscribe-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+    }
+
+    Form {
+      display: grid;
+      grid-template-columns: 8fr 4fr;
+      margin-top: 20px;
+
+      #formBasicEmail {
+        height: 45px;
+        border-radius: 5px 0 0 5px;
+      }
+      .sub-btn {
+        height: 45px;
+        border-radius: 0 5px 5px 0;
+        border: none;
+        background-color: #ff9b21;
+      }
+    }
+  }
+
+  .wrap-cont {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+
+    .footer-wrap-item {
+      width: 91%;
+      margin: 20px auto;
+
+      h3 {
+        font-size: 1rem;
+        font-weight: bold;
+      }
+    }
+
+    .contacts {
+      display: flex;
+      flex-direction: column;
+
+      div {
+        margin-top: 20px;
+      }
+
+      div > span:first-child {
+        color: #1e88e5;
+        margin-right: 10px;
+      }
+
+      div:last-child > span:last-child > a {
+        text-decoration: none;
+      }
+    }
+    .nav {
+      flex-direction: column;
+
+      .nav-link {
+        padding: 5px;
+        color: #0c131e;
+      }
+
+      .nav-link:hover {
+        color: #0d6efd;
+      }
+    }
+
+    .footer-info-cont {
+      span {
+        vertical-align: middle;
+      }
+      .footer-info {
+        width: 275px;
+        margin-top: 10px;
+        text-align: left;
+        font-size: 1rem;
+      }
+    }
+
+    .social-network-cont {
+      margin-bottom: 150px;
+
+      a {
+        display: inline-flex;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        color: #ffffff;
+        background-color: #0d6efd;
+        padding: 5px;
+        margin: 10px 5px 0 0;
+        font-size: 1.2rem;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .bottom-line {
+      position: absolute;
+      bottom: 60px;
+      left: 15px;
+    }
+  }
+}

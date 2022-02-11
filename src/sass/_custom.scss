@@ -1,0 +1,20 @@
+$mainFont: 16px;
+
+$topListBkg: rgb(143, 143, 211);
+$topListColor: rgb(109, 2, 153);
+$topListHoverBkg: rgb(67, 67, 155);
+$menuBkgColor: rgb(25, 109, 183);
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  position: relative;
+  min-height: 100vh;
+}
+
+.container {
+  padding: 0;
+}
